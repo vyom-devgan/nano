@@ -1,8 +1,9 @@
-```mermaid
-flowchart TD
-    A[User Signs ASL Gesture] -->|Camera Captures Frame| B(Preprocessing)
-    B -->|Feature Extraction| C(Deep Learning Model)
-    C -->|ASL Gesture Classification| D{Gesture Matches Vocabulary?}
-    D -- Yes --> E[Convert to Text Output]
-    E -->|Optional TTS| F[Audio Output]
-    D -- No --> G[Request User to Repeat Gesture]
+
+### **Flowchart Explanation**  
+- The **user performs an ASL sign**, which is captured by the **camera**.  
+- The **preprocessing step** removes noise, normalizes frames, and extracts hand features.  
+- The **deep learning model (CNN + LSTM)** recognizes the **gesture and classifies it**.  
+- If the **gesture matches the ASL vocabulary**, it's **converted to text output** and optionally **spoken using TTS**.  
+- If the **gesture is unclear**, the system **prompts the user to repeat it**.  
+
+This flowchart **accurately represents the ASL recognition process** while ensuring **real-time, efficient, and accurate translation**. 🚀
