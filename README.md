@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[User Signs ASL Gesture] -->|Camera Captures Frame| B(Preprocessing)
     B -->|Feature Extraction| C(Deep Learning Model)
